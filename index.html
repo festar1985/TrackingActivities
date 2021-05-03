@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script defer src="todos_func.js"></script>
+    <script defer src="Jsboot.js"></script>
+  </head>
+  <body>
+    <h1>Todo</h1>
+    <input id="filter-todo" placeholder="Enter filter text" type="text" />
+    <label
+      >Hide completed
+      <input id="hide-completed" type="checkbox" />
+    </label>
+    <div id="todos-container"></div>
+    <form id="new-todo">
+      <input
+        id="add-todo"
+        placeholder="Enter something todo"
+        type="text"
+        name="text"
+      />
+      <button id="btn-add">Add todo</button>
+    </form>
+  </body>
+</html>
