@@ -1,3 +1,5 @@
+"use strict";
+
 const todos = getSavedTodos(); //generate the array
 
 let filtered = "";

@@ -1,10 +1,18 @@
+"use strict";
+
 //Fetch Existing todos from localStorage
 const getSavedTodos = () => {
   const retrieveData = localStorage.getItem("todosList");
 
-  if (retrieveData !== null) {
-    return JSON.parse(retrieveData);
-  } else return [];
+  //if (retrieveData !== null) {
+  //  return JSON.parse(retrieveData);
+  //} else return [];
+
+  try {
+    return retrieveData ? JSON.parse(retrieveData) : [];
+  } catch (error) {
+    return [];
+  }
 };
 
 //Save todos to LocalStorage
